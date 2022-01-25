@@ -1,9 +1,11 @@
 import AllRoutes from "./components/AllRoutes";
+import Footer from "./components/Footer";
 import "./App.css";
 function App() {
   return (
     <div className="App">
       <AllRoutes />
+      <Footer />
     </div>
   );
 }

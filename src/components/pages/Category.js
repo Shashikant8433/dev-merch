@@ -28,7 +28,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 
 const drawerWidth = 200;
 
-export default function Shop() {
+export default function Category() {
   const [state, setState] = React.useState({
     left: false,
     isOpen: false,
