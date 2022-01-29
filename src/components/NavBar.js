@@ -16,7 +16,8 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import LoginIcon from "@mui/icons-material/Login";
 import LogoutIcon from "@mui/icons-material/Logout";
-import ShopIcon from "@mui/icons-material/Shop";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 const NavBar = ({ children }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -31,7 +32,7 @@ const NavBar = ({ children }) => {
 
   return (
     <>
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
@@ -75,7 +76,7 @@ const NavBar = ({ children }) => {
                   display: { xs: "block", md: "none" },
                 }}
               >
-                <StyledLink to="/" color="#000000de">
+                <StyledLink to="/login" color="#000000de">
                   <MenuItem onClick={handleCloseNavMenu}>
                     <ListItemIcon>
                       <LoginIcon fontSize="small" />
@@ -83,7 +84,7 @@ const NavBar = ({ children }) => {
                     <ListItemText primary="Login" />
                   </MenuItem>
                 </StyledLink>
-                <StyledLink to="/" color="#000000de">
+                <StyledLink to="/logout" color="#000000de">
                   <MenuItem onClick={handleCloseNavMenu}>
                     <ListItemIcon>
                       <LogoutIcon fontSize="small" />
@@ -91,38 +92,22 @@ const NavBar = ({ children }) => {
                     <ListItemText primary="Logout" />
                   </MenuItem>
                 </StyledLink>
-                {/* <StyledLink to="/login">
+                <StyledLink to="/wishlist" color="#000000de">
                   <MenuItem onClick={handleCloseNavMenu}>
                     <ListItemIcon>
-                      <ShopIcon fontSize="small" />
-                    </ListItemIcon>
-                    <ListItemText primary="Login" />
-                  </MenuItem>
-                </StyledLink> */}
-                {/* <StyledLink to="/logout">
-                  <MenuItem onClick={handleCloseNavMenu}>
-                    <ListItemIcon>
-                      <ShopIcon fontSize="small" />
-                    </ListItemIcon>
-                    <ListItemText primary="Logout" />
-                  </MenuItem>
-                </StyledLink> */}
-                {/* <StyledLink to="/cart">
-                  <MenuItem onClick={handleCloseNavMenu}>
-                    <ListItemIcon>
-                      <ShopIcon fontSize="small" />
-                    </ListItemIcon>
-                    <ListItemText primary="Cart" />
-                  </MenuItem>
-                </StyledLink> */}
-                {/* <StyledLink to="/wishlist">
-                  <MenuItem onClick={handleCloseNavMenu}>
-                    <ListItemIcon>
-                      <ShopIcon fontSize="small" />
+                      <FavoriteBorderIcon fontSize="small" />
                     </ListItemIcon>
                     <ListItemText primary="Wishlist" />
                   </MenuItem>
-                </StyledLink> */}
+                </StyledLink>
+                <StyledLink to="/cart" color="#000000de">
+                  <MenuItem onClick={handleCloseNavMenu}>
+                    <ListItemIcon>
+                      <ShoppingCartOutlinedIcon fontSize="small" />
+                    </ListItemIcon>
+                    <ListItemText primary="Cart" />
+                  </MenuItem>
+                </StyledLink>
               </Menu>
             </Box>
 
@@ -134,7 +119,7 @@ const NavBar = ({ children }) => {
             >
               {/* mobile view */}
               <StyledLink to="/" color="#fff">
-                Dev Merchh
+                Dev Merch
               </StyledLink>
             </Typography>
 
@@ -145,11 +130,6 @@ const NavBar = ({ children }) => {
                 display: { xs: "none", md: "flex" },
               }}
             >
-              {/* <StyledLink to="/">
-                <Button sx={{ my: 2, color: "white", display: "block" }}>
-                  Home
-                </Button>
-              </StyledLink> */}
               <StyledLink to="/login">
                 <Button
                   sx={{
@@ -165,21 +145,6 @@ const NavBar = ({ children }) => {
                   Login
                 </Button>
               </StyledLink>
-              {/* <StyledLink to="/logout">
-                <Button
-                  sx={{
-                    my: 2,
-                    textTransform: "none",
-                    color: "white",
-                    display: "flex",
-                    gap: ".2rem",
-                  }}
-                  size="large"
-                >
-                  <LogoutIcon fontSize="small" />
-                  Logout
-                </Button> 
-              </StyledLink>*/}
               <StyledLink to="/logout">
                 <Button
                   sx={{
@@ -193,6 +158,36 @@ const NavBar = ({ children }) => {
                 >
                   <LogoutIcon fontSize="small" />
                   Logout
+                </Button>
+              </StyledLink>
+              <StyledLink to="/wishlist">
+                <Button
+                  sx={{
+                    my: 2,
+                    textTransform: "none",
+                    color: "white",
+                    display: "flex",
+                    gap: ".2rem",
+                  }}
+                  size="large"
+                >
+                  <FavoriteBorderIcon fontSize="small" />
+                  Wishlist
+                </Button>
+              </StyledLink>
+              <StyledLink to="/cart">
+                <Button
+                  sx={{
+                    my: 2,
+                    textTransform: "none",
+                    color: "white",
+                    display: "flex",
+                    gap: ".2rem",
+                  }}
+                  size="large"
+                >
+                  <ShoppingCartOutlinedIcon fontSize="small" />
+                  Cart
                 </Button>
               </StyledLink>
             </Box>

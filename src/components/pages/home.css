@@ -1,0 +1,14 @@
+.image-banner {
+  width: 100%;
+  display: block;
+}
+.home-horizontal-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media screen and (max-width: 550px) {
+  .category-cards {
+    margin: auto 2rem;
+  }
+}

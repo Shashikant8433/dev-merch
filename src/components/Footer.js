@@ -1,3 +1,4 @@
+import "../components/footer.css";
 import React from "react";
 import Button from "@mui/material/Button";
 import EastIcon from "@mui/icons-material/East";
@@ -20,11 +21,18 @@ function Footer() {
         </div>
         <div className="footer-detail">
           <h4>Categories</h4>
-          <ul>
-            <li>Men</li>
-            <li>Women</li>
-            <li>Kids</li>
-          </ul>
+
+          <a style={{ textDecoration: "none", color: "inherit" }} href="#">
+            Men
+          </a>
+          <br />
+          <a style={{ textDecoration: "none", color: "inherit" }} href="#">
+            Women
+          </a>
+          <br />
+          <a style={{ textDecoration: "none", color: "inherit" }} href="#">
+            Kids
+          </a>
         </div>
         <div className="footer-detail">
           <h4>Contact Us</h4>
@@ -56,32 +64,16 @@ function Footer() {
       </div>
       <div className="newsletter">
         subscribe to our newsletter to get awesome deals and discounts!
-        <br />
-        <input
-          style={{
-            background: "#a1d0ff",
-            border: "0",
-            height: "1.2rem",
-            margin: "0",
-          }}
-          type="email"
-          placeholder="Your email"
-        />
-        <Button
-          sx={{
-            color: "gray",
-            background: "#a1d0ff",
-            height: "1.2rem",
-            margin: "0",
-            borderRadius: "0",
-          }}
-        >
-          <EastIcon />
-        </Button>
+        <div>
+          <input type="email" placeholder="Your email" />
+          <button>
+            <EastIcon fontSize="small" />
+          </button>
+          <br />
+        </div>
       </div>
-      <p style={{ textAlign: "center" }}>
-        © 2022 Dev Merch is Proudly Powered by NEOG Made for educationcal
-        purposes
+      <p style={{ textAlign: "center", margin: "0 auto .2rem auto" }}>
+        © 2022 Dev Merch Made for educationcal purposes
       </p>
     </div>
   );

@@ -1,0 +1,6 @@
+.cart-horizontal-cards-container {
+  display: "flex";
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.2rem;
+}

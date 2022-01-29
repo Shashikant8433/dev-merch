@@ -1,0 +1,13 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+.horizontal-card-typography {
+  position: relative;
+}
+@media screen and (min-width: 400px) {
+  .horizontal-card-typography {
+    min-width: 35vw;
+    max-width: 40vw;
+  }
+}

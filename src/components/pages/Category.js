@@ -16,6 +16,7 @@ import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import { green } from "@mui/material/colors";
 import Avatar from "@mui/material/Avatar";
+import VerticalCard from "../VerticalCard";
 
 const DrawerHeader = styled("div")(({ theme }) => ({
   display: "flex",
@@ -104,6 +105,71 @@ export default function Category() {
         <Divider />
         {list("left")}
       </Drawer>
+      <div
+        style={{
+          height: "calc(100vh - 400px)",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <VerticalCard
+          product
+          imageLink={"https://picsum.photos/900/700"}
+          productName={"Diamond ring"}
+          priceDetails={{ amount: 1200, discountInPercent: 16.7 }}
+          fastDelivery={true}
+        />
+        <VerticalCard
+          product
+          imageLink={"https://picsum.photos/900/700"}
+          productName={"Diamond ring"}
+          priceDetails={{ amount: 1200, discountInPercent: 16.7 }}
+          fastDelivery={true}
+        />
+        <VerticalCard
+          product
+          imageLink={"https://picsum.photos/900/700"}
+          productName={"Diamond ring"}
+          priceDetails={{ amount: 1200, discountInPercent: 16.7 }}
+          fastDelivery={true}
+        />
+        <VerticalCard
+          product
+          imageLink={"https://picsum.photos/900/700"}
+          productName={"Diamond ring"}
+          priceDetails={{ amount: 1200, discountInPercent: 16.7 }}
+          fastDelivery={true}
+        />
+        <VerticalCard
+          product
+          imageLink={"https://picsum.photos/900/700"}
+          productName={"Diamond ring"}
+          priceDetails={{ amount: 1200, discountInPercent: 16.7 }}
+          fastDelivery={true}
+        />
+        <VerticalCard
+          product
+          imageLink={"https://picsum.photos/900/700"}
+          productName={"Diamond ring"}
+          priceDetails={{ amount: 1200, discountInPercent: 16.7 }}
+          fastDelivery={true}
+        />
+        <VerticalCard
+          product
+          imageLink={"https://picsum.photos/900/700"}
+          productName={"Diamond ring"}
+          priceDetails={{ amount: 1200, discountInPercent: 16.7 }}
+          fastDelivery={true}
+        />
+        <VerticalCard
+          product
+          imageLink={"https://picsum.photos/900/700"}
+          productName={"Diamond ring"}
+          priceDetails={{ amount: 1200, discountInPercent: 16.7 }}
+          fastDelivery={true}
+        />
+      </div>
     </>
   );
 }
