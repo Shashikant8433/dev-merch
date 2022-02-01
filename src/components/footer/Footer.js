@@ -1,4 +1,4 @@
-import "../components/footer.css";
+import "./footer.css";
 import React from "react";
 import Button from "@mui/material/Button";
 import EastIcon from "@mui/icons-material/East";

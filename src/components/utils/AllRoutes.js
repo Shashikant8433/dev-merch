@@ -1,13 +1,16 @@
 import { Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Category from "./pages/Category";
-import NotFound from "./pages/NotFound";
-import Login from "./pages/Login";
-import Logout from "./pages/Logout";
-import Signup from "./pages/Signup";
-import Cart from "./pages/Cart";
-import Wishlist from "./pages/Wishlist";
-import Product from "./pages/Product";
+import {
+  Home,
+  Category,
+  NotFound,
+  Login,
+  Logout,
+  Signup,
+  Cart,
+  Wishlist,
+  Product,
+} from "../pages";
+
 function AllRoutes() {
   return (
     <Routes>

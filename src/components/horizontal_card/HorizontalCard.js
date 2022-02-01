@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
-import TextRating from "./TextRating";
+import TextRating from "../utils/TextRating";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 export default function HorizontalCard({

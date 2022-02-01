@@ -1,21 +1,26 @@
 import "./verticalCard.css";
 import React from "react";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import IconButton from "@mui/material/IconButton";
-import Button from "@mui/material/Button";
-import TextRating from "./TextRating";
+import TextRating from "../utils/TextRating";
+import {
+  Card,
+  CardContent,
+  CardMedia,
+  Typography,
+  IconButton,
+  Button,
+} from "@mui/material";
+import {
+  FavoriteBorder as FavoriteBorderIcon,
+  Favorite as FavoriteIcon,
+} from "@mui/icons-material";
 
 function VerticalCard({
-  cardWidth = 250,
+  cardWidth = 200,
   imageLink,
   productName,
-  priceDetails,
-  cardHeight = 330,
+  price,
+  discountInPercent,
+  cardHeight = 300,
   wishlist,
   product,
   rating = 3,
@@ -24,8 +29,8 @@ function VerticalCard({
   return (
     <Card
       sx={{
-        maxWidth: `${cardWidth}px`,
-        maxHeight: `${cardHeight}px`,
+        width: `${cardWidth}px`,
+        height: `${cardHeight}px`,
       }}
       className="vertical-card"
     >
@@ -66,17 +71,13 @@ function VerticalCard({
           }}
         >
           <strong>
-            ₹
-            {priceDetails?.amount -
-              (priceDetails?.discountInPercent * priceDetails?.amount) / 100}
+            ₹{price - (discountInPercent * price) / 100}
             /-
           </strong>
           <span style={{ color: "gray", textDecoration: "line-through" }}>
-            ₹{priceDetails?.amount}/-
+            ₹{price}/-
           </span>
-          <strong style={{ color: "#f75252" }}>
-            -{priceDetails?.discountInPercent}%
-          </strong>
+          <strong style={{ color: "#f75252" }}>-{discountInPercent}%</strong>
         </Typography>
         <TextRating
           value={rating}
@@ -95,4 +96,4 @@ function VerticalCard({
   );
 }
 
-export default VerticalCard;
+export default React.memo(VerticalCard);

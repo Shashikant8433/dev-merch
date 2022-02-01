@@ -1,7 +1,7 @@
 import "./home.css";
 import React from "react";
-import VerticalCard from "../VerticalCard";
-import HorizontalCard from "../HorizontalCard";
+import { VerticalCard } from "../..";
+import { HorizontalCard } from "../..";
 function Home() {
   return (
     <>

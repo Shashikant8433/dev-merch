@@ -1,5 +1,5 @@
-import AllRoutes from "./components/AllRoutes";
-import Footer from "./components/Footer";
+import { AllRoutes } from "./components/utils";
+import { Footer } from "./components";
 import "./App.css";
 function App() {
   return (

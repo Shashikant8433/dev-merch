@@ -1,5 +1,5 @@
 import React from "react";
-import HorizontalCard from "../HorizontalCard";
+import { HorizontalCard } from "../../index";
 function Cart() {
   return (
     <div style={{ minHeight: "calc(100vh - 400px)" }}>
@@ -8,7 +8,7 @@ function Cart() {
           cart
           categoryTitle={"Cart rings"}
           categoryType={"women"}
-          imageLink={"https://picsum.photos/900/400"}
+          imageLink={"https://picsum.photos/400/300"}
         />
         <HorizontalCard
           cart
