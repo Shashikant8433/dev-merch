@@ -1,6 +1,6 @@
 import "./verticalCard.css";
 import React from "react";
-import TextRating from "../utils/TextRating";
+
 import {
   Card,
   CardContent,
@@ -9,10 +9,13 @@ import {
   IconButton,
   Button,
 } from "@mui/material";
+
 import {
   FavoriteBorder as FavoriteBorderIcon,
   Favorite as FavoriteIcon,
 } from "@mui/icons-material";
+
+import TextRating from "../utils/TextRating";
 
 function VerticalCard({
   cardWidth = 200,

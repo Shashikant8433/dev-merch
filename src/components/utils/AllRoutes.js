@@ -9,7 +9,7 @@ import {
   Cart,
   Wishlist,
   Product,
-} from "../pages";
+} from "../../pages";
 
 function AllRoutes() {
   return (

@@ -1,7 +1,7 @@
-import "./footer.css";
 import React from "react";
-import Button from "@mui/material/Button";
-import EastIcon from "@mui/icons-material/East";
+import { Button } from "@mui/material";
+import { East as EastIcon } from "@mui/icons-material";
+import "./footer.css";
 function Footer() {
   return (
     <div id="footer">

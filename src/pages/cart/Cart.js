@@ -1,8 +1,12 @@
 import React from "react";
-import { HorizontalCard } from "../../index";
+import { HorizontalCard } from "../../components";
+import "./cart.css";
+
 function Cart() {
   return (
-    <div style={{ minHeight: "calc(100vh - 400px)" }}>
+    <div
+      style={{ minHeight: "calc(100vh - 400px)", margin: "0", padding: "0" }}
+    >
       <div className="cart-horizontal-cards-container">
         <HorizontalCard
           cart

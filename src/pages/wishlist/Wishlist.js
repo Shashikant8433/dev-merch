@@ -1,6 +1,7 @@
-import "./wishlist.css";
 import React from "react";
-import { VerticalCard } from "../..";
+import "./wishlist.css";
+
+import { VerticalCard } from "../../components";
 function Wishlist() {
   return (
     <div className="wishlist-cards-container">

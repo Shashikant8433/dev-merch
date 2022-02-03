@@ -1,16 +1,22 @@
-import "./horizontalCard.css";
-import Box from "@mui/material/Box";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
-import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
-import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
-import TextRating from "../utils/TextRating";
-import DeleteIcon from "@mui/icons-material/Delete";
+import {
+  Box,
+  Card,
+  CardContent,
+  CardMedia,
+  Button,
+  Typography,
+  IconButton,
+} from "@mui/material";
 
+import {
+  RemoveOutlined as RemoveOutlinedIcon,
+  AddOutlined as AddOutlinedIcon,
+  Delete as DeleteIcon,
+} from "@mui/icons-material";
+
+import { TextRating } from "../utils";
+
+import "./horizontalCard.css";
 export default function HorizontalCard({
   categoryTitle,
   categoryType,
@@ -43,7 +49,7 @@ export default function HorizontalCard({
               flex: "1 0 auto",
             }}
           >
-            <Typography component="div" variant="h5">
+            <Typography component="div" variant="h5" className="card-title">
               {categoryTitle}
             </Typography>
             <Typography
@@ -57,9 +63,9 @@ export default function HorizontalCard({
                   color="error"
                   sx={{ position: "absolute", top: "0", right: "0" }}
                   aria-label="delete"
-                  size="large"
+                  size="medium"
                 >
-                  <DeleteIcon />
+                  <DeleteIcon fontSize={"small"} />
                 </IconButton>
               )}
               {!cart && <>{categoryDescription}</>}
