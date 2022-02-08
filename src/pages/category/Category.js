@@ -35,7 +35,7 @@ const drawerWidth = 270;
 
 export default function Category() {
   const [drawerState, setDrawerState] = React.useState({
-    left: true,
+    left: false,
     isOpen: false,
   });
 
@@ -392,46 +392,6 @@ export default function Category() {
         <VerticalCard
           product
           imageLink={"https://picsum.photos/900/500"}
-          productName={"Diamond ring"}
-          price={1200}
-          discountInPercent={16.7}
-          fastDelivery={true}
-        />
-        <VerticalCard
-          product
-          imageLink={"https://picsum.photos/500/700"}
-          productName={"Diamond ring"}
-          price={1200}
-          discountInPercent={16.7}
-          fastDelivery={true}
-        />
-        <VerticalCard
-          product
-          imageLink={"https://picsum.photos/600/700"}
-          productName={"Diamond ring"}
-          price={1200}
-          discountInPercent={16.7}
-          fastDelivery={true}
-        />
-        <VerticalCard
-          product
-          imageLink={"https://picsum.photos/300/500"}
-          productName={"Diamond ring"}
-          price={1200}
-          discountInPercent={16.7}
-          fastDelivery={true}
-        />
-        <VerticalCard
-          product
-          imageLink={"https://picsum.photos/300/700"}
-          productName={"Diamond ring"}
-          price={1200}
-          discountInPercent={16.7}
-          fastDelivery={true}
-        />
-        <VerticalCard
-          product
-          imageLink={"https://picsum.photos/900/600"}
           productName={"Diamond ring"}
           price={1200}
           discountInPercent={16.7}
